@@ -1,0 +1,12 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: $text-font;
+}
+.header__title,
+.window__title,
+.reasons__title {
+  font-family: $title-font;
+}
