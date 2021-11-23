@@ -3,42 +3,55 @@
   margin: 0;
   padding: 0; }
 
-.code {
-  font-size: 16px;
-  background: #d8d8d8;
-  padding: 0 5px;
-  border-radius: 5px; }
-
-.link__adalab:hover {
-  background-color: #099d8d;
-  color: #fff; }
-
-.link__github:hover {
-  background-color: #CCC;
-  color: #000; }
+ul,
+li {
+  list-style: none; }
 
 body {
-  padding: 2rem;
+  scroll-behavior: smooth; }
+
+html {
+  font-size: 10px; }
+
+.header {
   height: 100vh;
-  background-image: url("../images/bg-adalab.png");
-  background-color: #f3f4f5;
-  font-family: "Roboto", sans-serif; }
-
-.page__header {
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem; }
-
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: #999; }
-
-.main__list {
-  padding-left: 2rem;
-  padding-bottom: 20px; }
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 53px; }
+  .header__burguer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0271bc;
+    padding: 14px; }
+    .header__burguer .burguer__img {
+      height: 14px;
+      width: 16px; }
+  .header__title {
+    font-family: "Roboto Slab", serif;
+    font-size: 4.2rem;
+    line-height: 55px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+  .header__text {
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    font-size: 1.6rem;
+    margin-bottom: 45px; }
+  .header__arrow {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 /*# sourceMappingURL=main.css.map */
