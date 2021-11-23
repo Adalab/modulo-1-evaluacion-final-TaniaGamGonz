@@ -8,6 +8,7 @@
   background-size: cover;
   background-position: center;
   padding-bottom: 53px;
+  color: $white;
 
   &__burguer {
     position: fixed;
@@ -24,14 +25,11 @@
     font-family: $title-font;
     font-size: 4.2rem;
     line-height: 55px;
-    color: $white;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 10px;
   }
   &__text {
-    font-family: $text-font;
-    color: $white;
     font-size: 1.6rem;
     margin-bottom: 45px;
   }

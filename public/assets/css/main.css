@@ -8,10 +8,44 @@ li {
   list-style: none; }
 
 body {
-  scroll-behavior: smooth; }
+  font-family: "Roboto", sans-serif; }
 
 html {
-  font-size: 10px; }
+  font-size: 10px;
+  scroll-behavior: smooth; }
+
+a {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit; }
+
+.window {
+  padding: 30px 15px 45px 15px;
+  line-height: 30px; }
+  .window__tip {
+    font-size: 1.4rem;
+    color: #8ccbea; }
+  .window__title {
+    color: #000;
+    font-family: "Roboto Slab", serif;
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    margin-bottom: 15px; }
+  .window__text {
+    font-size: 1.8rem;
+    color: #4a4a4a;
+    margin-bottom: 30px; }
+  .window__link {
+    display: inline-block;
+    color: #f26002;
+    line-height: 45px;
+    font-size: 2rem;
+    font-weight: 700;
+    border: solid 2px #f26002;
+    padding: 0 25px;
+    border-radius: 22.5px;
+    height: 45px;
+    text-align: center; }
 
 .header {
   height: 100vh;
@@ -22,7 +56,8 @@ html {
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
-  padding-bottom: 53px; }
+  padding-bottom: 53px;
+  color: #fff; }
   .header__burguer {
     position: fixed;
     top: 0;
@@ -36,13 +71,10 @@ html {
     font-family: "Roboto Slab", serif;
     font-size: 4.2rem;
     line-height: 55px;
-    color: #fff;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 10px; }
   .header__text {
-    font-family: "Roboto", sans-serif;
-    color: #fff;
     font-size: 1.6rem;
     margin-bottom: 45px; }
   .header__arrow {

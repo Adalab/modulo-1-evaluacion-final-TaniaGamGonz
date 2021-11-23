@@ -1,0 +1,32 @@
+.window {
+  padding: 30px 15px 45px 15px;
+  line-height: 30px;
+  &__tip {
+    font-size: 1.4rem;
+    color: $light-blue;
+  }
+  &__title {
+    color: $black;
+    font-family: $title-font;
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+  }
+  &__text {
+    font-size: 1.8rem;
+    color: $grey;
+    margin-bottom: 30px;
+  }
+  &__link {
+    display: inline-block;
+    color: $orange;
+    line-height: 45px;
+    font-size: 2rem;
+    font-weight: 700;
+    border: solid 2px $orange;
+    padding: 0 25px;
+    border-radius: 22.5px;
+    height: 45px;
+    text-align: center;
+  }
+}
