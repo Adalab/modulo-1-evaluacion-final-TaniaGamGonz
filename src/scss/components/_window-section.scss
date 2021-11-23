@@ -1,6 +1,11 @@
 .window {
   padding: 30px 15px 45px 15px;
   line-height: 30px;
+
+  @media all and (min-width: 768px) {
+    padding: 30px 39px 60px 39px;
+  }
+
   &__tip {
     font-size: 1.4rem;
     color: $light-blue;
@@ -10,11 +15,19 @@
     font-size: 2.4rem;
     text-transform: capitalize;
     margin-bottom: 15px;
+    @media all and (min-width: 768px) {
+      font-size: 2.6rem;
+      line-height: 45px;
+      margin-bottom: 30px;
+    }
   }
   &__text {
     font-size: 1.8rem;
     color: $grey;
     margin-bottom: 30px;
+    @media all and (min-width: 768px) {
+      font-size: 2rem;
+    }
   }
   &__link {
     display: inline-block;
@@ -27,5 +40,12 @@
     border-radius: 22.5px;
     height: 45px;
     text-align: center;
+    transition: color 0.5s, background-color 1s, box-shadow 1s;
+
+    &:hover {
+      color: $white;
+      background-color: $orange;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    }
   }
 }

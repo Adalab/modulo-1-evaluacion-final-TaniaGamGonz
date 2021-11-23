@@ -8,17 +8,43 @@
   background-color: $ice-blue;
   line-height: 30px;
 
+  @media all and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
   &__title {
     font-size: 2.4rem;
     margin-bottom: 45px;
+    @media all and (min-width: 768px) {
+      font-size: 2.6rem;
+      grid-column: 1/4;
+    }
   }
   .reason {
     width: 180px;
     margin-bottom: 45px;
 
+    @media all and (min-width: 768px) {
+      width: 100%;
+      margin-bottom: 60px;
+    }
+
     &__title,
     &__text {
       font-size: 1.8rem;
+    }
+
+    &__title {
+      @media all and (min-width: 768px) {
+        font-size: 2.4rem;
+        margin-bottom: 14px;
+      }
+    }
+    &__text {
+      @media all and (min-width: 768px) {
+        font-size: 2rem;
+      }
     }
   }
   &__link {
@@ -31,5 +57,15 @@
     line-height: 45px;
     font-weight: 500;
     border-radius: 22.5px;
+    transition: background-color 1s, color 0.5s, box-shadow 1s;
+
+    &:hover {
+      background-color: $deep-blue;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    @media all and (min-width: 768px) {
+      grid-column: 1/4;
+    }
   }
 }

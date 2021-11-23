@@ -8,6 +8,13 @@
   line-height: 30px;
   color: $white;
 
+  @media all and (min-width: 768px) {
+    padding: 45px 39px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
   &__arrow {
     position: absolute;
     top: 0;
@@ -16,10 +23,19 @@
   }
 
   &__menu {
+    margin-bottom: 30px;
+    @media all and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+
     .menu__section {
-      margin-bottom: 30px;
       .menu__item {
         text-align: center;
+
+        @media all and (min-width: 768px) {
+          text-align: left;
+        }
+
         .menu__link {
           font-size: 1.6rem;
           text-transform: uppercase;
@@ -33,5 +49,8 @@
     .heart {
       color: $orange;
     }
+  }
+  &__container {
+    order: -1;
   }
 }

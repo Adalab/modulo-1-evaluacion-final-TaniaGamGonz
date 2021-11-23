@@ -36,6 +36,9 @@ body {
 .window {
   padding: 30px 15px 45px 15px;
   line-height: 30px; }
+  @media all and (min-width: 768px) {
+    .window {
+      padding: 30px 39px 60px 39px; } }
   .window__tip {
     font-size: 1.4rem;
     color: #8ccbea; }
@@ -44,10 +47,18 @@ body {
     font-size: 2.4rem;
     text-transform: capitalize;
     margin-bottom: 15px; }
+    @media all and (min-width: 768px) {
+      .window__title {
+        font-size: 2.6rem;
+        line-height: 45px;
+        margin-bottom: 30px; } }
   .window__text {
     font-size: 1.8rem;
     color: #4a4a4a;
     margin-bottom: 30px; }
+    @media all and (min-width: 768px) {
+      .window__text {
+        font-size: 2rem; } }
   .window__link {
     display: inline-block;
     color: #f26002;
@@ -58,7 +69,12 @@ body {
     padding: 0 25px;
     border-radius: 22.5px;
     height: 45px;
-    text-align: center; }
+    text-align: center;
+    transition: color 0.5s, background-color 1s, box-shadow 1s; }
+    .window__link:hover {
+      color: #fff;
+      background-color: #f26002;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
 
 .reasons {
   padding: 30px 15px 60px 15px;
@@ -69,14 +85,33 @@ body {
   text-align: center;
   background-color: #eff9ff;
   line-height: 30px; }
+  @media all and (min-width: 768px) {
+    .reasons {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto auto; } }
   .reasons__title {
     font-size: 2.4rem;
     margin-bottom: 45px; }
+    @media all and (min-width: 768px) {
+      .reasons__title {
+        font-size: 2.6rem;
+        grid-column: 1/4; } }
   .reasons .reason {
     width: 180px;
     margin-bottom: 45px; }
+    @media all and (min-width: 768px) {
+      .reasons .reason {
+        width: 100%;
+        margin-bottom: 60px; } }
     .reasons .reason__title, .reasons .reason__text {
       font-size: 1.8rem; }
+    @media all and (min-width: 768px) {
+      .reasons .reason__title {
+        font-size: 2.4rem;
+        margin-bottom: 14px; } }
+    @media all and (min-width: 768px) {
+      .reasons .reason__text {
+        font-size: 2rem; } }
   .reasons__link {
     display: inline-block;
     height: 45px;
@@ -86,7 +121,14 @@ body {
     font-size: 2rem;
     line-height: 45px;
     font-weight: 500;
-    border-radius: 22.5px; }
+    border-radius: 22.5px;
+    transition: background-color 1s, color 0.5s, box-shadow 1s; }
+    .reasons__link:hover {
+      background-color: #304268;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
+    @media all and (min-width: 768px) {
+      .reasons__link {
+        grid-column: 1/4; } }
 
 .header {
   height: 100vh;
@@ -99,6 +141,9 @@ body {
   background-position: center;
   padding-bottom: 53px;
   color: #fff; }
+  @media all and (min-width: 768px) {
+    .header {
+      padding-bottom: 45px; } }
   .header__burguer {
     position: fixed;
     top: 0;
@@ -114,9 +159,17 @@ body {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 10px; }
+    @media all and (min-width: 768px) {
+      .header__title {
+        font-size: 8rem;
+        line-height: 106px;
+        margin-bottom: 20px; } }
   .header__text {
     font-size: 1.6rem;
     margin-bottom: 45px; }
+    @media all and (min-width: 768px) {
+      .header__text {
+        font-size: 2.4rem; } }
 
 .footer {
   display: flex;
@@ -127,15 +180,27 @@ body {
   padding: 60px 0 45px 0;
   line-height: 30px;
   color: #fff; }
+  @media all and (min-width: 768px) {
+    .footer {
+      padding: 45px 39px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start; } }
   .footer__arrow {
     position: absolute;
     top: 0;
     margin-top: -22.5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
-  .footer__menu .menu__section {
+  .footer__menu {
     margin-bottom: 30px; }
+    @media all and (min-width: 768px) {
+      .footer__menu {
+        margin-bottom: 0; } }
     .footer__menu .menu__section .menu__item {
       text-align: center; }
+      @media all and (min-width: 768px) {
+        .footer__menu .menu__section .menu__item {
+          text-align: left; } }
       .footer__menu .menu__section .menu__item .menu__link {
         font-size: 1.6rem;
         text-transform: uppercase; }
@@ -145,5 +210,7 @@ body {
     .footer .copy .heart,
     .footer .late-motiv .heart {
       color: #f26002; }
+  .footer__container {
+    order: -1; }
 
 /*# sourceMappingURL=main.css.map */
