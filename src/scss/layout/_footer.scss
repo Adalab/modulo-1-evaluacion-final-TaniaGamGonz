@@ -26,8 +26,18 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 
     @media all and (min-width: 768px) {
-      left: 50%;
-      transform: translateX(-50%);
+      left: 0;
+      right: 0;
+      margin: auto;
+      margin-top: -22.5px;
+    }
+
+    &:hover {
+      @media all and (min-width: 1200px) {
+        animation-name: throw;
+        animation-duration: 0.7s;
+        animation-iteration-count: 2;
+      }
     }
   }
 

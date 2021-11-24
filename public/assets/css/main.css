@@ -33,6 +33,38 @@ body {
   justify-content: center;
   align-items: center; }
 
+@-webkit-keyframes throw {
+  0% { }
+  50% {
+    transform: scale(1.5);
+    box-shadow: 3px 2px 7px rgba(0, 0, 0, 0.9); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes throw {
+  0% { }
+  50% {
+    transform: scale(1.5);
+    box-shadow: 3px 2px 7px rgba(0, 0, 0, 0.9); }
+  100% {
+    transform: scale(1); } }
+
+@-webkit-keyframes arrow {
+  0% {
+    transform: translateY(0%); }
+  50% {
+    transform: translateY(30%); }
+  100% {
+    transform: translateY(0%); } }
+
+@keyframes arrow {
+  0% {
+    transform: translateY(0%); }
+  50% {
+    transform: translateY(30%); }
+  100% {
+    transform: translateY(0%); } }
+
 .window {
   padding: 30px 15px 45px 15px;
   line-height: 30px; }
@@ -163,7 +195,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background-image: url(../images/cover.jpg);
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
   padding-bottom: 53px;
@@ -208,6 +240,14 @@ body {
       .header__text {
         font-size: 2.4rem;
         margin-bottom: 30px; } }
+  @media all and (min-width: 1200px) {
+    .header__arrow:hover {
+      -webkit-animation-name: arrow;
+      animation-name: arrow;
+      -webkit-animation-duration: 0.5s;
+      animation-duration: 0.5s;
+      -webkit-animation-iteration-count: 2;
+      animation-iteration-count: 2; } }
 
 .footer {
   display: flex;
@@ -235,8 +275,18 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
     @media all and (min-width: 768px) {
       .footer__arrow {
-        left: 50%;
-        transform: translateX(-50%); } }
+        left: 0;
+        right: 0;
+        margin: auto;
+        margin-top: -22.5px; } }
+    @media all and (min-width: 1200px) {
+      .footer__arrow:hover {
+        -webkit-animation-name: throw;
+        animation-name: throw;
+        -webkit-animation-duration: 0.7s;
+        animation-duration: 0.7s;
+        -webkit-animation-iteration-count: 2;
+        animation-iteration-count: 2; } }
   .footer__menu {
     margin-bottom: 30px; }
     @media all and (min-width: 768px) {
@@ -261,10 +311,11 @@ body {
     .footer .copy .heart,
     .footer .late-motiv .heart {
       color: #f26002; }
-  .footer__container {
-    order: -1; }
-    @media all and (min-width: 1200px) {
-      .footer__container {
-        width: 151px; } }
+  @media all and (min-width: 768px) {
+    .footer__container {
+      order: -1; } }
+  @media all and (min-width: 1200px) {
+    .footer__container {
+      width: 151px; } }
 
 /*# sourceMappingURL=main.css.map */

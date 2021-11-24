@@ -4,9 +4,11 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background-image: url(../images/cover.jpg);
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)),
+    url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
+
   padding-bottom: 53px;
   color: $white;
 
@@ -53,6 +55,15 @@
     @media all and (min-width: 768px) {
       font-size: 2.4rem;
       margin-bottom: 30px;
+    }
+  }
+  &__arrow {
+    &:hover {
+      @media all and (min-width: 1200px) {
+        animation-name: arrow;
+        animation-duration: 0.5s;
+        animation-iteration-count: 2;
+      }
     }
   }
 }
