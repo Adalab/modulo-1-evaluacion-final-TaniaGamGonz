@@ -39,9 +39,19 @@ body {
   @media all and (min-width: 768px) {
     .window {
       padding: 30px 39px 60px 39px; } }
+  @media all and (min-width: 1200px) {
+    .window {
+      padding: 60px 0; } }
+  @media all and (min-width: 1200px) {
+    .window__container {
+      margin: 0 auto;
+      max-width: 730px; } }
   .window__tip {
     font-size: 1.4rem;
     color: #8ccbea; }
+    @media all and (min-width: 1200px) {
+      .window__tip {
+        font-size: 1.6rem; } }
   .window__title {
     color: #000;
     font-size: 2.4rem;
@@ -52,6 +62,9 @@ body {
         font-size: 2.6rem;
         line-height: 45px;
         margin-bottom: 30px; } }
+    @media all and (min-width: 1200px) {
+      .window__title {
+        font-size: 3.2rem; } }
   .window__text {
     font-size: 1.8rem;
     color: #4a4a4a;
@@ -71,6 +84,10 @@ body {
     height: 45px;
     text-align: center;
     transition: color 0.5s, background-color 1s, box-shadow 1s; }
+    @media all and (min-width: 1200px) {
+      .window__link {
+        width: 160px;
+        padding: 0; } }
     .window__link:hover {
       color: #fff;
       background-color: #f26002;
@@ -89,6 +106,9 @@ body {
     .reasons {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: auto auto auto; } }
+  @media all and (min-width: 1200px) {
+    .reasons {
+      padding: 60px 0; } }
   .reasons__title {
     font-size: 2.4rem;
     margin-bottom: 45px; }
@@ -96,6 +116,9 @@ body {
       .reasons__title {
         font-size: 2.6rem;
         grid-column: 1/4; } }
+    @media all and (min-width: 1200px) {
+      .reasons__title {
+        font-size: 3.2rem; } }
   .reasons .reason {
     width: 180px;
     margin-bottom: 45px; }
@@ -129,6 +152,10 @@ body {
     @media all and (min-width: 768px) {
       .reasons__link {
         grid-column: 1/4; } }
+    @media all and (min-width: 1200px) {
+      .reasons__link {
+        width: 255px;
+        padding: 0; } }
 
 .header {
   height: 100vh;
@@ -144,6 +171,9 @@ body {
   @media all and (min-width: 768px) {
     .header {
       padding-bottom: 45px; } }
+  @media all and (min-width: 1200px) {
+    .header {
+      padding-bottom: 13px; } }
   .header__burguer {
     position: fixed;
     top: 0;
@@ -158,18 +188,26 @@ body {
     line-height: 55px;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
     @media all and (min-width: 768px) {
       .header__title {
         font-size: 8rem;
         line-height: 106px;
         margin-bottom: 20px; } }
+    @media all and (min-width: 1200px) {
+      .header__title {
+        font-size: 10rem;
+        line-height: 132px;
+        margin-bottom: 0;
+        max-width: 730px; } }
   .header__text {
     font-size: 1.6rem;
     margin-bottom: 45px; }
     @media all and (min-width: 768px) {
       .header__text {
-        font-size: 2.4rem; } }
+        font-size: 2.4rem;
+        margin-bottom: 30px; } }
 
 .footer {
   display: flex;
@@ -186,16 +224,29 @@ body {
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start; } }
+  @media all and (min-width: 1200px) {
+    .footer {
+      justify-content: center;
+      padding: 45px 0; } }
   .footer__arrow {
     position: absolute;
     top: 0;
     margin-top: -22.5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
+    @media all and (min-width: 768px) {
+      .footer__arrow {
+        left: 50%;
+        transform: translateX(-50%); } }
   .footer__menu {
     margin-bottom: 30px; }
     @media all and (min-width: 768px) {
       .footer__menu {
         margin-bottom: 0; } }
+    @media all and (min-width: 1200px) {
+      .footer__menu {
+        margin-left: 30px; }
+        .footer__menu:first-of-type {
+          width: 161px; } }
     .footer__menu .menu__section .menu__item {
       text-align: center; }
       @media all and (min-width: 768px) {
@@ -212,5 +263,8 @@ body {
       color: #f26002; }
   .footer__container {
     order: -1; }
+    @media all and (min-width: 1200px) {
+      .footer__container {
+        width: 151px; } }
 
 /*# sourceMappingURL=main.css.map */

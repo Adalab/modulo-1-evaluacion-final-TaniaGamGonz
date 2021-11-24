@@ -13,6 +13,9 @@
   @media all and (min-width: 768px) {
     padding-bottom: 45px;
   }
+  @media all and (min-width: 1200px) {
+    padding-bottom: 13px;
+  }
 
   &__burguer {
     position: fixed;
@@ -31,10 +34,17 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     @media all and (min-width: 768px) {
       font-size: 8rem;
       line-height: 106px;
       margin-bottom: 20px;
+    }
+    @media all and (min-width: 1200px) {
+      font-size: 10rem;
+      line-height: 132px;
+      margin-bottom: 0;
+      max-width: 730px;
     }
   }
   &__text {
@@ -42,6 +52,7 @@
     margin-bottom: 45px;
     @media all and (min-width: 768px) {
       font-size: 2.4rem;
+      margin-bottom: 30px;
     }
   }
 }

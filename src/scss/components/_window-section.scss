@@ -5,10 +5,23 @@
   @media all and (min-width: 768px) {
     padding: 30px 39px 60px 39px;
   }
+  @media all and (min-width: 1200px) {
+    padding: 60px 0;
+  }
+
+  &__container {
+    @media all and (min-width: 1200px) {
+      margin: 0 auto;
+      max-width: 730px;
+    }
+  }
 
   &__tip {
     font-size: 1.4rem;
     color: $light-blue;
+    @media all and (min-width: 1200px) {
+      font-size: 1.6rem;
+    }
   }
   &__title {
     color: $black;
@@ -19,6 +32,9 @@
       font-size: 2.6rem;
       line-height: 45px;
       margin-bottom: 30px;
+    }
+    @media all and (min-width: 1200px) {
+      font-size: 3.2rem;
     }
   }
   &__text {
@@ -41,6 +57,11 @@
     height: 45px;
     text-align: center;
     transition: color 0.5s, background-color 1s, box-shadow 1s;
+
+    @media all and (min-width: 1200px) {
+      width: 160px;
+      padding: 0;
+    }
 
     &:hover {
       color: $white;

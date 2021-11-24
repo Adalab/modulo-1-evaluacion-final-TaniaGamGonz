@@ -14,18 +14,34 @@
     justify-content: space-between;
     align-items: flex-start;
   }
+  @media all and (min-width: 1200px) {
+    justify-content: center;
+    padding: 45px 0;
+  }
 
   &__arrow {
     position: absolute;
     top: 0;
     margin-top: -22.5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+    @media all and (min-width: 768px) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   &__menu {
     margin-bottom: 30px;
     @media all and (min-width: 768px) {
       margin-bottom: 0;
+    }
+    @media all and (min-width: 1200px) {
+      margin-left: 30px;
+
+      &:first-of-type {
+        width: 161px;
+      }
     }
 
     .menu__section {
@@ -52,5 +68,8 @@
   }
   &__container {
     order: -1;
+    @media all and (min-width: 1200px) {
+      width: 151px;
+    }
   }
 }
