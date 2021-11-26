@@ -189,6 +189,18 @@ body {
         width: 255px;
         padding: 0; } }
 
+.pricing-section {
+  width: 100%;
+  background-color: #304268;
+  color: #fff;
+  padding: 0 30px; }
+  .pricing-section__title {
+    text-align: center; }
+  @media all and (min-width: 768px) {
+    .pricing-section__container {
+      display: flex;
+      justify-content: space-between; } }
+
 .header {
   height: 100vh;
   display: flex;

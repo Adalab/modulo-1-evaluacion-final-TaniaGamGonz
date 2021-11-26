@@ -1,0 +1,16 @@
+.pricing-section {
+  width: 100%;
+  background-color: $deep-blue;
+  color: $white;
+  padding: 0 30px;
+
+  &__title {
+    text-align: center;
+  }
+  &__container {
+    @media all and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
