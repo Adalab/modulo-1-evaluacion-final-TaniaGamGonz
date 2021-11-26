@@ -8,13 +8,13 @@
   line-height: 30px;
   color: $white;
 
-  @media all and (min-width: 768px) {
+  @include tablet {
     padding: 45px 39px;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
   }
-  @media all and (min-width: 1200px) {
+  @include desktop {
     justify-content: center;
     padding: 45px 0;
   }
@@ -25,7 +25,7 @@
     margin-top: -22.5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 
-    @media all and (min-width: 768px) {
+    @include tablet {
       left: 0;
       right: 0;
       margin: auto;
@@ -33,7 +33,7 @@
     }
 
     &:hover {
-      @media all and (min-width: 1200px) {
+      @include desktop {
         animation-name: throw;
         animation-duration: 0.7s;
         animation-iteration-count: 2;
@@ -43,10 +43,10 @@
 
   &__menu {
     margin-bottom: 30px;
-    @media all and (min-width: 768px) {
+    @include tablet {
       margin-bottom: 0;
     }
-    @media all and (min-width: 1200px) {
+    @include desktop {
       margin-left: 30px;
 
       &:first-of-type {
@@ -58,7 +58,7 @@
       .menu__item {
         text-align: center;
 
-        @media all and (min-width: 768px) {
+        @include tablet {
           text-align: left;
         }
 
@@ -77,10 +77,10 @@
     }
   }
   &__container {
-    @media all and (min-width: 768px) {
+    @include tablet {
       order: -1;
     }
-    @media all and (min-width: 1200px) {
+    @include desktop {
       width: 151px;
     }
   }
